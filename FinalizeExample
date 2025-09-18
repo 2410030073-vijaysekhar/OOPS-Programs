@@ -1,0 +1,22 @@
+class Sample{
+	int id;
+	 Sample(int id) {
+		this.id=id;
+		System.out.println("Object with id"+id);
+	}
+}
+protected void finalise() {
+	String id;
+	System.out.println("object with id"+id+"is garbage");
+}
+public class Finalise {
+	public static void main(String[] args) {
+		Sample s1 = new Sample(101);
+		Sample s2 = new Sample(102);
+		s1=null;
+		s2=null;
+		Object system;
+		((Object) system).get();
+		System.out.println("End of the main method");
+	}
+}
